@@ -1,0 +1,93 @@
+
+.todoapp {
+    background-color: white;
+    border-radius: 10px;
+    width: 800px;
+    height: auto;
+    padding-bottom: 140PX;
+    display: flex;
+    padding-left: 20px;
+    margin: auto;
+
+}
+
+input {
+    width: 770px;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+.main {
+    position: relative;
+    top: 110px;
+    right: 800px;
+}
+
+#complete {
+    border-radius: 2px;
+    border: 1px solid #e664a3;
+    color: #e664a3;
+    margin-right: 10px;
+}
+
+.line {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.none {
+    display: none;
+}
+
+.toggle {
+    width: 10px;
+}
+
+.addBtn {
+    background-image: linear-gradient(to right, #e664a3, #ec645f);
+    width: 775px;
+    height: 30px;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 25px;
+    outline: none;
+  
+}
+
+.destroy {
+    position: fixed;
+    left: 880px;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+}
+
+.todo-count {
+    position: relative;
+    left: 720px;
+}
+
+.new-todo {
+    display: flex;
+    position: relative;
+    width: 770px;
+    left: 25px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.new-todo1 {
+    display: flex;
+    position: relative;
+    width: 770px;
+    left: 1px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
