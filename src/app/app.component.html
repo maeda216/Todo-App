@@ -4,17 +4,17 @@
     <p>A place to store your todos</p>
     <input class="new-todo1" placeholder="Filter your to-dos" autofocus="" [(ngModel)]="filter">
   </header>
-  <section class="main" *ngIf="todos.length > 0">
+  <section class="main">
     <ol class="todo-list">
       <li *ngFor="let todo of getTodos(); let i = index" [class.completed]="todo.complete">
         <div class="view">
-          <button id="complete" type="button" [ngClass]="{'none': todo.complete}" (click)="toggleTodoComplete(todo)" (click)="todo.complete">Complete</button> 
+          <button id="complete" type="button" [ngClass]="{'none': todo.complete}" (click)="toggleTodoComplete(todo)">Complete</button> 
           <label [ngClass]="{'line': todo.complete}">{{todo.task}}</label>
           <button class="destroy" (click)="removeTodo(i)">X</button>
         </div>
       </li>
     </ol>
-    <footer class="footer" *ngIf="todos.length > 0">
+    <footer class="footer">
       <span class="todo-count"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'item' : 'items'}} left</span>
     </footer>
         <input class="new-todo" placeholder="Add your to-do" autofocus="" [(ngModel)]="newTodo.task" (keyup.enter)="addTodo()">

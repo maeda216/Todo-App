@@ -1,4 +1,8 @@
 
+* {
+    font-family: sans-serif;
+}
+
 .todoapp {
     background-color: white;
     border-radius: 10px;
@@ -9,6 +13,17 @@
     padding-left: 20px;
     margin: auto;
 
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+P {
+    position: relative;
+    bottom: 10px;
+    color: rgb(85, 84, 84);
 }
 
 input {
@@ -61,7 +76,7 @@ button {
 
 .destroy {
     position: fixed;
-    left: 880px;
+    left: 1090px;
     background-color: transparent;
     outline: transparent;
     border: transparent;
@@ -87,7 +102,25 @@ button {
     position: relative;
     width: 770px;
     left: 1px;
+    bottom: 9px;
     outline: none;
-    margin-bottom: 10px;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 1199px) {
+    .destroy {
+        left: 970px;
+    }
+}
+
+@media screen and (max-width: 1159px) {
+    .destroy {
+        left: 900px;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    .destroy {
+        left: 860px;
+    }
 }

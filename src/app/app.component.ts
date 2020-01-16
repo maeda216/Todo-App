@@ -49,7 +49,7 @@ export class AppComponent {
   }
 
   addTodo() {
-   this.todoDataService.addTodo(this.newTodo);
+  //  this.todoDataService.addTodo(this.newTodo);
    this.todos.push( this.newTodo );
     this.newTodo = new Todo();
   }
@@ -57,7 +57,6 @@ export class AppComponent {
   toggleTodoComplete(todo) {
     todo.complete = true;
     //this.todoDataService.toggleTodoComplete(todo);
-    console.log(todo.complete);
   }
 
   removeTodo(i) {
