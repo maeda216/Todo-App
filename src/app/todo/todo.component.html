@@ -1,0 +1,8 @@
+<li>
+    <input *ngIf="editMode" (keyup.enter)="save(todo, editText)" [(ngModel)]="editText">
+    <div class="view">
+      <button id="complete" type="button" [ngClass]="{'none': todo.complete}" (click)="toggleTodoComplete(todo)">Complete</button> 
+      <label [ngClass]="{'line': todo.complete}" (click)="editInput()">{{todo.task}}</label>
+      <button class="destroy" (click)="removeTodo()">X</button>
+    </div>
+  </li>

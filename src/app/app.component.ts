@@ -12,6 +12,8 @@ export class AppComponent {
 
   newTodo: Todo = new Todo();
   filter: string = '';
+  editMode = false;
+  
   
   todos = [
     {
@@ -74,6 +76,16 @@ export class AppComponent {
       })
 
   //  return this.todoDataService.getAllTodos();
+  }
+
+  editInput() {
+    this.editMode = true;
+  }
+
+  save(todo, task) {
+    todo.task = task;
+    this.editMode = false;
+    console.log(todo, task);
   }
 
 }
